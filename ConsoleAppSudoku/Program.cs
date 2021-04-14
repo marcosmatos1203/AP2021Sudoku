@@ -5,8 +5,21 @@ namespace ConsoleAppSudoku
 {
     class Program
     {
+        #region Requisito 01 [OK]
+        //validar linha
+        #endregion
+        #region Requisito 02 [OK]
+        //adiciona linha na matriz
+        #endregion
+        #region Requisito 03 [OK]
+        //validar coluna
+        #endregion
+        #region Requisito 04 [OK]
+        //validar quadrante
+        #endregion
         static void Main(string[] args)
         {
+            Console.WriteLine("SUDOKU Versão 1.4");
             int contaLinha = 0, contaColuna = 0;
             string[,] matrix = new string[9, 9];
             string[] coluna = new string[9];
@@ -69,16 +82,6 @@ namespace ConsoleAppSudoku
                 Mensagem("SIM");
                 break;
             }
-
-            ////plota matriz
-            //for (int i = 0; i < 9; i++)
-            //{
-            //    for (int j = 0; j < 9; j++)
-            //    {
-            //        Console.Write(matrix[i, j]); 
-            //    }
-            //    Console.WriteLine();
-            //}
 
             Console.ReadLine();
         }
